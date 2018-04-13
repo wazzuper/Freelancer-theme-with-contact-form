@@ -36,6 +36,7 @@ gem 'slim'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'toastr-rails'
+gem 'mail_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -43,6 +44,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'dotenv-rails'
 end
 
 group :development do
