@@ -1,1 +1,241 @@
-p Test
+/ Navigation
+nav#mainNav.navbar.navbar-expand-lg.bg-secondary.fixed-top.text-uppercase
+  .container
+    a.navbar-brand.js-scroll-trigger href="#page-top"  Start Bootstrap
+    button.navbar-toggler.navbar-toggler-right.text-uppercase.bg-primary.text-white.rounded aria-controls="navbarResponsive" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarResponsive" data-toggle="collapse" type="button" 
+        | Menu
+        i.fa.fa-bars
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger href="#portfolio"  Portfolio
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger href="#about"  About
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger href="#contact"  Contact
+/ Header
+header.masthead.bg-primary.text-white.text-center
+  .container
+    img.img-fluid.mb-5.d-block.mx-auto alt="" src="/assets/profile.png" /
+    h1.text-uppercase.mb-0 Start Bootstrap
+    hr.star-light/
+    h2.font-weight-light.mb-0 Web Developer - Graphic Artist - User Experience Designer
+/ Portfolio Grid Section
+section#portfolio.portfolio
+  .container
+    h2.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+    hr.star-dark.mb-5/
+    .row
+      .col-md-6.col-lg-4
+        a.portfolio-item.d-block.mx-auto href="#portfolio-modal-1" 
+          .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+            .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+              i.fa.fa-search-plus.fa-3x
+          img.img-fluid alt="" src="/assets/portfolio/cabin.png" /
+      .col-md-6.col-lg-4
+        a.portfolio-item.d-block.mx-auto href="#portfolio-modal-2" 
+          .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+            .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+              i.fa.fa-search-plus.fa-3x
+          img.img-fluid alt="" src="/assets/portfolio/cake.png" /
+      .col-md-6.col-lg-4
+        a.portfolio-item.d-block.mx-auto href="#portfolio-modal-3" 
+          .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+            .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+              i.fa.fa-search-plus.fa-3x
+          img.img-fluid alt="" src="/assets/portfolio/circus.png" /
+      .col-md-6.col-lg-4
+        a.portfolio-item.d-block.mx-auto href="#portfolio-modal-4" 
+          .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+            .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+              i.fa.fa-search-plus.fa-3x
+          img.img-fluid alt="" src="/assets/portfolio/game.png" /
+      .col-md-6.col-lg-4
+        a.portfolio-item.d-block.mx-auto href="#portfolio-modal-5" 
+          .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+            .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+              i.fa.fa-search-plus.fa-3x
+          img.img-fluid alt="" src="/assets/portfolio/safe.png" /
+      .col-md-6.col-lg-4
+        a.portfolio-item.d-block.mx-auto href="#portfolio-modal-6" 
+          .portfolio-item-caption.d-flex.position-absolute.h-100.w-100
+            .portfolio-item-caption-content.my-auto.w-100.text-center.text-white
+              i.fa.fa-search-plus.fa-3x
+          img.img-fluid alt="" src="/assets/portfolio/submarine.png" /
+/ About Section
+section#about.bg-primary.text-white.mb-0
+  .container
+    h2.text-center.text-uppercase.text-white About
+    hr.star-light.mb-5/
+    .row
+      .col-lg-4.ml-auto
+        p.lead Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+      .col-lg-4.mr-auto
+        p.lead Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+    .text-center.mt-4
+      a.btn.btn-xl.btn-outline-light href="#" 
+        i.fa.fa-download.mr-2
+        | Download Now!
+/ Contact Section
+section#contact
+  .container
+    h2.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+    hr.star-dark.mb-5/
+    .row
+      .col-lg-8.mx-auto
+        form#contactForm name="sentMessage" novalidate="novalidate" 
+          .control-group
+            .form-group.floating-label-form-group.controls.mb-0.pb-2
+              label Name
+              input#name.form-control data-validation-required-message=("Please enter your name.") placeholder="Name" required="required" type="text" /
+              p.help-block.text-danger
+          .control-group
+            .form-group.floating-label-form-group.controls.mb-0.pb-2
+              label Email Address
+              input#email.form-control data-validation-required-message=("Please enter your email address.") placeholder=("Email Address") required="required" type="email" /
+              p.help-block.text-danger
+          .control-group
+            .form-group.floating-label-form-group.controls.mb-0.pb-2
+              label Phone Number
+              input#phone.form-control data-validation-required-message=("Please enter your phone number.") placeholder=("Phone Number") required="required" type="tel" /
+              p.help-block.text-danger
+          .control-group
+            .form-group.floating-label-form-group.controls.mb-0.pb-2
+              label Message
+              textarea#message.form-control data-validation-required-message=("Please enter a message.") placeholder="Message" required="required" rows="5" 
+              p.help-block.text-danger
+          br/
+          #success
+          .form-group
+            button#sendMessageButton.btn.btn-primary.btn-xl type="submit"  Send
+/ Footer
+footer.footer.text-center
+  .container
+    .row
+      .col-md-4.mb-5.mb-lg-0
+        h4.text-uppercase.mb-4 Location
+        p.lead.mb-0
+          | 2215 John Daniel Drive
+          br/
+          | Clark, MO 65243
+      .col-md-4.mb-5.mb-lg-0
+        h4.text-uppercase.mb-4 Around the Web
+        ul.list-inline.mb-0
+          li.list-inline-item
+            a.btn.btn-outline-light.btn-social.text-center.rounded-circle href="#" 
+              i.fa.fa-fw.fa-facebook
+          li.list-inline-item
+            a.btn.btn-outline-light.btn-social.text-center.rounded-circle href="#" 
+              i.fa.fa-fw.fa-google-plus
+          li.list-inline-item
+            a.btn.btn-outline-light.btn-social.text-center.rounded-circle href="#" 
+              i.fa.fa-fw.fa-twitter
+          li.list-inline-item
+            a.btn.btn-outline-light.btn-social.text-center.rounded-circle href="#" 
+              i.fa.fa-fw.fa-linkedin
+          li.list-inline-item
+            a.btn.btn-outline-light.btn-social.text-center.rounded-circle href="#" 
+              i.fa.fa-fw.fa-dribbble
+      .col-md-4
+        h4.text-uppercase.mb-4 About Freelancer
+        p.lead.mb-0
+          | Freelance is a free to use, open source Bootstrap theme created by
+          a href="http://startbootstrap.com"  Start Bootstrap
+.copyright.py-4.text-center.text-white
+  .container
+    small Copyright © Your Website 2018
+/ Scroll to Top Button (Only visible on small and extra-small screen sizes)
+.scroll-to-top.d-lg-none.position-fixed
+  a.js-scroll-trigger.d-block.text-center.text-white.rounded href="#page-top" 
+    i.fa.fa-chevron-up
+/ Portfolio Modals
+/ Portfolio Modal 1
+#portfolio-modal-1.portfolio-modal.mfp-hide
+  .portfolio-modal-dialog.bg-white
+    a.close-button.d-none.d-md-block.portfolio-modal-dismiss href="#" 
+      i.fa.fa-3x.fa-times
+    .container.text-center
+      .row
+        .col-lg-8.mx-auto
+          h2.text-secondary.text-uppercase.mb-0 Project Name
+          hr.star-dark.mb-5/
+          img.img-fluid.mb-5 alt="" src="/assets/portfolio/cabin.png" /
+          p.mb-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+          a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss href="#" 
+            i.fa.fa-close
+            | Close Project
+/ Portfolio Modal 2
+#portfolio-modal-2.portfolio-modal.mfp-hide
+  .portfolio-modal-dialog.bg-white
+    a.close-button.d-none.d-md-block.portfolio-modal-dismiss href="#" 
+      i.fa.fa-3x.fa-times
+    .container.text-center
+      .row
+        .col-lg-8.mx-auto
+          h2.text-secondary.text-uppercase.mb-0 Project Name
+          hr.star-dark.mb-5/
+          img.img-fluid.mb-5 alt="" src="/assets/portfolio/cake.png" /
+          p.mb-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+          a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss href="#" 
+            i.fa.fa-close
+            | Close Project
+/! Portfolio Modal 3
+#portfolio-modal-3.portfolio-modal.mfp-hide
+  .portfolio-modal-dialog.bg-white
+    a.close-button.d-none.d-md-block.portfolio-modal-dismiss href="#" 
+      i.fa.fa-3x.fa-times
+    .container.text-center
+      .row
+        .col-lg-8.mx-auto
+          h2.text-secondary.text-uppercase.mb-0 Project Name
+          hr.star-dark.mb-5/
+          img.img-fluid.mb-5 alt="" src="/assets/portfolio/circus.png" /
+          p.mb-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+          a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss href="#" 
+            i.fa.fa-close
+            | Close Project
+/ Portfolio Modal 4
+#portfolio-modal-4.portfolio-modal.mfp-hide
+  .portfolio-modal-dialog.bg-white
+    a.close-button.d-none.d-md-block.portfolio-modal-dismiss href="#" 
+      i.fa.fa-3x.fa-times
+    .container.text-center
+      .row
+        .col-lg-8.mx-auto
+          h2.text-secondary.text-uppercase.mb-0 Project Name
+          hr.star-dark.mb-5/
+          img.img-fluid.mb-5 alt="" src="/assets/portfolio/game.png" /
+          p.mb-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+          a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss href="#" 
+            i.fa.fa-close
+            | Close Project
+/ Portfolio Modal 5
+#portfolio-modal-5.portfolio-modal.mfp-hide
+  .portfolio-modal-dialog.bg-white
+    a.close-button.d-none.d-md-block.portfolio-modal-dismiss href="#" 
+      i.fa.fa-3x.fa-times
+    .container.text-center
+      .row
+        .col-lg-8.mx-auto
+          h2.text-secondary.text-uppercase.mb-0 Project Name
+          hr.star-dark.mb-5/
+          img.img-fluid.mb-5 alt="" src="/assets/portfolio/safe.png" /
+          p.mb-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+          a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss href="#" 
+            i.fa.fa-close
+            | Close Project
+/ Portfolio Modal 6
+#portfolio-modal-6.portfolio-modal.mfp-hide
+  .portfolio-modal-dialog.bg-white
+    a.close-button.d-none.d-md-block.portfolio-modal-dismiss href="#" 
+      i.fa.fa-3x.fa-times
+    .container.text-center
+      .row
+        .col-lg-8.mx-auto
+          h2.text-secondary.text-uppercase.mb-0 Project Name
+          hr.star-dark.mb-5/
+          img.img-fluid.mb-5 alt="" src="/assets/portfolio/submarine.png" /
+          p.mb-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+          a.btn.btn-primary.btn-lg.rounded-pill.portfolio-modal-dismiss href="#" 
+            i.fa.fa-close
+            | Close Project

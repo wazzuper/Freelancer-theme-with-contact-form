@@ -4,7 +4,17 @@ html
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
     title Freelancer
     =csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    / Custom fonts for this template
+    = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Montserrat:400,700', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', media: 'all', 'data-turbolinks-track': 'reload'
+    / Plugin SCSS
+    = stylesheet_link_tag 'magnific-popup', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  body
+    / Plugin JS
+    = javascript_include_tag 'jquery.easing.js', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'jquery.magnific-popup.js', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'contact-me.js', 'data-turbolinks-track': 'reload'
+  body#page-top
     = yield
