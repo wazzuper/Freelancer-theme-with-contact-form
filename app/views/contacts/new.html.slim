@@ -83,31 +83,28 @@ section#contact
     hr.star-dark.mb-5/
     .row
       .col-lg-8.mx-auto
-        form#contactForm name="sentMessage" novalidate="novalidate" 
-          .control-group
-            .form-group.floating-label-form-group.controls.mb-0.pb-2
-              label Name
-              input#name.form-control data-validation-required-message=("Please enter your name.") placeholder="Name" required="required" type="text" /
-              p.help-block.text-danger
-          .control-group
-            .form-group.floating-label-form-group.controls.mb-0.pb-2
-              label Email Address
-              input#email.form-control data-validation-required-message=("Please enter your email address.") placeholder=("Email Address") required="required" type="email" /
-              p.help-block.text-danger
-          .control-group
-            .form-group.floating-label-form-group.controls.mb-0.pb-2
-              label Phone Number
-              input#phone.form-control data-validation-required-message=("Please enter your phone number.") placeholder=("Phone Number") required="required" type="tel" /
-              p.help-block.text-danger
-          .control-group
-            .form-group.floating-label-form-group.controls.mb-0.pb-2
-              label Message
-              textarea#message.form-control data-validation-required-message=("Please enter a message.") placeholder="Message" required="required" rows="5" 
-              p.help-block.text-danger
+        = form_for @contact do |f|
+          #contactForm name="sentMessage"
+            .control-group
+              .form-group.floating-label-form-group.controls.mb-0.pb-2
+                = f.label :name
+                = f.text_field :name, placeholder: 'Name', required: 'required', class: 'form-control'
+            .control-group
+              .form-group.floating-label-form-group.controls.mb-0.pb-2
+                = f.label :email
+                = f.email_field :email, placeholder: 'Email address', required: 'required', class: 'form-control'
+            .control-group
+              .form-group.floating-label-form-group.controls.mb-0.pb-2
+                = f.label :phone
+                = f.text_field :phone, placeholder: 'Phone number', required: 'required', class: 'form-control'
+            .control-group
+              .form-group.floating-label-form-group.controls.mb-0.pb-2
+                = f.label :message
+                = f.text_area :message, rows: 5, placeholder: 'Message', required: 'required', class: 'form-control'
           br/
           #success
           .form-group
-            button#sendMessageButton.btn.btn-primary.btn-xl type="submit"  Send
+            = f.submit 'Send', class: 'btn btn-primary btn-xl'
 / Footer
 footer.footer.text-center
   .container
