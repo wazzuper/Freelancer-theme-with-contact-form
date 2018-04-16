@@ -1,24 +1,24 @@
-# README
+# Freelancer app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Added ability to send email and save info from the contact form to the database
+Used this bootstrap theme https://github.com/BlackrockDigital/startbootstrap-freelancer
 
-Things you may want to cover:
+Demo: [Freelancer](https://freelancer-contact-form.herokuapp.com/)
 
-* Ruby version
+![Freelancer head](./head.png)
+![Freelancer form](./form.png)
 
-* System dependencies
+---
+### First, install all gems:
 
-* Configuration
+`bundle install`
 
-* Database creation
+### Second, setup database and migrations
 
-* Database initialization
+`rails db:setup && rails db:migrate`
 
-* How to run the test suite
+### Last, start the server
 
-* Services (job queues, cache servers, search engines, etc.)
+`rails server`
 
-* Deployment instructions
-
-* ...
+Go to http://localhost:3000
