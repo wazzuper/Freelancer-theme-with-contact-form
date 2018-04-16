@@ -1,6 +1,7 @@
 # Freelancer app
 
 Added ability to send email and save info from the contact form to the database
+
 Used this bootstrap theme https://github.com/BlackrockDigital/startbootstrap-freelancer
 
 Demo: [Freelancer](https://freelancer-contact-form.herokuapp.com/)
